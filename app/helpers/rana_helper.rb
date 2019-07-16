@@ -1,0 +1,2 @@
+module RanaHelper
+end
