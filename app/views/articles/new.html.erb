@@ -1,14 +1,25 @@
-<%= form_with scope: :article, local: true do |form| %>
-  <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
+<%= form_for Article.new do |form| %>
+ 
+  <p style="margin:15px">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
   </p>
  
-  <p>
-    <%= form.label :text %><br>
-    <%= form.text_area :text %>
+  <p style="margin:25px">
+    <%= form.label :age %>
+    <%= form.text_field :age %>
   </p>
  
+ <p>
+    <%= form.label :contact %>
+    <%= form.text_field :contact %>
+  </p>
+ 
+  <p style="margin:5px">
+    <%= form.label :message %>
+    <%= form.text_area :message %>
+  </p>
+
   <p>
     <%= form.submit %>
   </p>
